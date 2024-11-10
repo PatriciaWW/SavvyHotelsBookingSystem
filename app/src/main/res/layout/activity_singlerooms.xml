@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="20dp"
+    android:padding="11dp"
+    app:cardElevation="10dp"
+    tools:context=".Singlerooms">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:layout_width="55dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:id="@+id/room_image"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:src="@drawable/screen1"/>-->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text Y"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/room_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear2"
+            android:layout_below="@id/linear1"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/room_category"
+                android:text="Dummy Description "
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff9800"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear3"
+            android:layout_below="@id/linear2"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/room_desc"
+                android:text="Dummy Description Dummy Description Dummy Description Dummy Description"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear4"
+            android:layout_below="@id/linear3"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/no_guests"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear5"
+            android:layout_below="@id/linear4"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:text="Available"
+                android:fontFamily="@font/montserrat"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ff9800"
+                android:layout_marginBottom="5dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/room_cost"
+                android:text="KES 2,300"
+                android:fontFamily="@font/montserrat"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:id="@+id/bookroom"
+                android:text="Book this room"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
